@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>test</title>
+	<link rel="stylesheet" type="text/css" href="css/test.css">
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+</head>
+<body>
+
+	<h1 id="irongutang">irongutang</h1>
+	<h1 id="ironsadko">iron sadko</h1>
+
+	<ol class="rounded">
+		  <li><a href="#">Элемент списка</a></li>
+		  <li><a href="#">Элемент списка</a></li>
+		  <li><a href="#">Элемент списка</a></li>
+		  <li><a href="#">Элемент списка</a></li>
+		  <li><a href="#">Элемент списка</a></li>
+	</ol>
+
+	<ul class="test">
+		<li></li>
+		<li></li>
+		<li></li>
+		<li></li>
+		<li></li>
+		<li></li>
+		<li></li>
+		<li></li>
+		<li></li>
+	</ul>
+	
+	<script type="text/javascript">
+		
+		var colors = ['red', 'orange', 'yellow', 'green', 'blue', 'darkblue', 'purple'];
+		var current = 0;
+		
+		$(document).ready(function () {
+			setInterval(changeColor, 4000);
+		});
+
+		function changeColor() {
+			$('#ironsadko').fadeIn("slow", function() {
+				$(this).css("color", colors[current]);
+			});
+			current++;
+			if (current == 6) {
+				current = 0;
+				colors.reverse();
+			}
+		}
+	</script>
+</body>
+</html>

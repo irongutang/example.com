@@ -1,0 +1,112 @@
+body {
+	margin: 0;
+	padding: 0;
+	font-family: Verdana, Helvetica, sans-serif;
+}
+
+#irongutang {
+	-webkit-animation: color 5s ease-in-out infinite;
+    	-moz-animation: color 5s ease-in-out infinite;
+    	-o-animation: color 5s ease-in-out infinite;
+    	animation: color 5s ease-in-out infinite;
+}
+@keyframes color {
+      0% {
+      color: #FF0000;
+      }
+      17%{
+      color: #FFA500;
+      }
+      34%{
+      color:  #FFFF00;
+      }
+     51%{
+      color:  #008000;
+      }
+    68% {
+      color:  #0000FF;
+    }
+   85%{
+     color:  #000080;
+   }
+   100%{
+     color: #800080;
+   }
+}
+@-webkit-keyframes color {
+  0% {
+      color: #FF0000;
+      }
+      17%{
+      color: #FFA500;
+      }
+      34%{
+      color:  #FFFF00;
+      }
+     51%{
+      color:  #008000;
+      }
+    68% {
+      color:  #0000FF;
+    }
+   85%{
+	color:  #000080;
+   }
+   100%{
+       color: #800080;
+   }
+}
+
+
+.rounded {
+	counter-reset: li; 
+	list-style: none; 
+	font: 14px "Trebuchet MS", "Lucida Sans";
+	padding: 0;
+	text-shadow: 0 1px 0 rgba(255,255,255,.5);
+	margin-left: 20px; 
+}
+.rounded a {
+	position: relative;
+	display: block;
+	padding: .4em .4em .4em 2em;
+	margin: .5em 0;
+	background: #DAD2CA;
+	color: #444;
+	text-decoration: none;
+	border-radius: .3em;
+	transition: .3s ease-out;
+}
+.rounded a:hover {background: #E9E4E0;}
+.rounded a:hover:before {transform: rotate(360deg);}
+.rounded a:before {
+	content: counter(li);
+	counter-increment: li;
+	position: absolute;
+	left: -1.3em;
+	top: 50%;
+	margin-top: -1.3em;
+	background: #8FD4C1;
+	height: 2em;
+	width: 2em;
+	line-height: 2em;
+	border: .3em solid white;
+	text-align: center;
+	font-weight: bold;
+	border-radius: 2em;
+	transition: all .3s ease-out;
+}
+
+.test {
+	list-style-type: none;
+	width: 470px;
+	padding: 10px;
+}
+.test li {
+	background-color: green;
+	height: 150px;
+	width: 150px;
+	margin-bottom: 3px;
+	display: inline-block;
+}
+
